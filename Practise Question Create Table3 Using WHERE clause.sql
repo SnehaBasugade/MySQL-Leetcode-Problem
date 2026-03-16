@@ -30,7 +30,7 @@ SELECT * FROM student WHERE marks>90 AND city="Mumbai";
 SELECT * FROM student WHERE marks>93 OR city="Mumbai";
 SELECT * FROM student WHERE marks BETWEEN 80 AND 90;
 SELECT * FROM student WHERE city IN ("Delhi","Mumbai");
-SELECT * FROM student WHERE city NOT ("Delhi","New Pune");
+SELECT * FROM student WHERE city NOT IN ("Delhi","New Pune");
 SELECT * FROM student WHERE marks>75 LIMIT 3;
 SELECT * FROM student ORDER BY marks ASC;
 SELECT * FROM student ORDER BY marks DESC;
