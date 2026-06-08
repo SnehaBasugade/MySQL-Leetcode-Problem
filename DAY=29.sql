@@ -1,7 +1,4 @@
-# Write your MySQL query statement below
-SELECT CASE when id % 2 = 1 and id+1 in(select id from Seat) then id+1
-            when id % 2 = 0 then id-1
-            else id
-        end as id, student
-        from Seat
-        order by id;    
+SELECT DISTINCT author_id AS id
+FROM Views
+WHERE author_id = viewer_id
+ORDER BY id ASC
